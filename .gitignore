@@ -179,3 +179,7 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+tool/sdr-simulator/node_modules
+tool/sdr-simulator/.vite
+tool/sdr-simulator/dist
