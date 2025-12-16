@@ -38,12 +38,12 @@ jobs:
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
-          
+
       # Step 6: Configure GitHub token for authentication
       - name: Configure Git for GitHub Pages
         run: |
-          git config --global url."https://x-access-token:${{ secrets.GITHUB_TOKEN }}".insteadOf "https://github.com"
-          
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/kavicastelo/silent-delivery-receipts.git
+
       # Step 7: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         run: |
